@@ -48,7 +48,3 @@ variable "tags" {
   default     = {}
 }
 
-variable "public_key_openssh" {
-  description = "The SSH Public Key."
-  type        = string
-}
