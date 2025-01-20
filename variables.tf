@@ -28,7 +28,7 @@ variable "resource_group_name" {
 
 variable "naming_convention_info" {
   description = "The naming convention information."
-  type        = object({
+  type = object({
     name = string
     site = string
     env  = string
@@ -40,4 +40,10 @@ variable "create_ssh_public_key" {
   description = "Create SSH Public Key."
   type        = bool
   default     = true
+}
+
+variable "tags" {
+  description = "A mapping of tags to assign to the resource."
+  type        = map(string)
+  default     = {}
 }
